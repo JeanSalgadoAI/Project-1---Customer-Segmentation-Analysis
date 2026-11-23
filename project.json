@@ -1,0 +1,13 @@
+{
+  "number": 1,
+  "title": "Classificação binária em uma amostra didática",
+  "mode": "classification",
+  "target": "Target",
+  "features": [
+    "Feature_1",
+    "Feature_2"
+  ],
+  "objective": "Demonstrar separação de dados, pipeline e comparação com um classificador de referência.",
+  "limitations": "Há apenas dez observações e duas variáveis perfeitamente colineares. Três observações de teste não estimam desempenho real. Não há dados de clientes nem segmentação nesta base.",
+  "data": "data/sample_data.csv"
+}
