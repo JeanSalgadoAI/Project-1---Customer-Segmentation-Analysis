@@ -1,0 +1,4 @@
+row_index,actual,prediction,baseline_prediction,probability_1
+0,0,1,1,0.6201388888888888
+6,0,1,1,0.6201388888888888
+9,1,1,1,0.5458333333333331
