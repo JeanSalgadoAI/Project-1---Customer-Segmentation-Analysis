@@ -1,0 +1,73 @@
+# Classificação binária em uma amostra didática
+
+Demonstrar separação de dados, pipeline e comparação com um classificador de referência.
+
+## Limitações
+
+Há apenas dez observações e duas variáveis perfeitamente colineares. Três observações de teste não estimam desempenho real. Não há dados de clientes nem segmentação nesta base.
+
+## Resultados calculados
+
+```json
+{
+  "task": "classification",
+  "split": "stratified",
+  "train_rows": 7,
+  "test_rows": 3,
+  "features": [
+    "Feature_1",
+    "Feature_2"
+  ],
+  "target": "Target",
+  "model": "RandomForestClassifier",
+  "baseline": "DummyClassifier",
+  "model_metrics": {
+    "accuracy": 0.3333333333333333,
+    "balanced_accuracy": 0.5,
+    "precision": 0.3333333333333333,
+    "recall": 1.0,
+    "f1": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "roc_auc": 0.0,
+    "average_precision": 0.3333333333333333
+  },
+  "baseline_metrics": {
+    "accuracy": 0.3333333333333333,
+    "balanced_accuracy": 0.5,
+    "precision": 0.3333333333333333,
+    "recall": 1.0,
+    "f1": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "roc_auc": 0.5,
+    "average_precision": 0.3333333333333333
+  },
+  "test_positive_rate": 0.3333333333333333,
+  "data_rows": 10,
+  "data_columns": 3,
+  "data_sha256": "9745b2d49c20a1e8af4b1bf3f090726bb5102a5e2aa6d26be802b8e69d3b23f8",
+  "missing_cells": 0,
+  "random_seed": 42,
+  "data_origin": "synthetic",
+  "limitations": "Há apenas dez observações e duas variáveis perfeitamente colineares. Três observações de teste não estimam desempenho real. Não há dados de clientes nem segmentação nesta base."
+}
+```
+
+![Resumo](summary.svg)
